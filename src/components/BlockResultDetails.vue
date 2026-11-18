@@ -121,7 +121,7 @@ const emit = defineEmits<{
     &__type {
         font-size: 12px;
         line-height: 1em;
-        color: $color-milk-500;
+        color: $color-sand-400;
         text-transform: uppercase;
 
         @media (max-width: 767px) {

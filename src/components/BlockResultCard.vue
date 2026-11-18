@@ -74,13 +74,13 @@ const onCoverLoaded = (image: HTMLImageElement) => {
 
     &:hover {
         .az-result-card__title {
-            color: $color-grey-400;
-            text-shadow: 1px 1px $color-grey-200;
+            color: $color-grey-300;
+            text-shadow: 1px 1px $color-milk-400;
         }
     }
 
     &:focus-visible {
-        @include focus-ring($color-grey-400, true);
+        @include focus-ring($color-grey-300, true);
     }
 
     &__details {
@@ -101,7 +101,7 @@ const onCoverLoaded = (image: HTMLImageElement) => {
     &__type {
         font-size: 12px;
         line-height: 1em;
-        color: $color-milk-500;
+        color: $color-sand-400;
     }
 }
 </style>

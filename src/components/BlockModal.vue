@@ -206,7 +206,7 @@ onBeforeUnmount(() => {
     z-index: 1;
     overflow-y: auto;
     display: flex;
-    background: rgba($color-grey-400, .75);
+    background: rgba($color-grey-300, .75);
 
     &__content {
         position: relative;
@@ -216,8 +216,8 @@ onBeforeUnmount(() => {
         height: 680px;
         margin: auto;
         display: flex;
-        background: #B6B6AF;
-        box-shadow: 0 0 48px 10px $color-grey-400;
+        background: $color-milk-500;
+        box-shadow: 0 0 48px 10px $color-grey-300;
 
         @media (max-width: 767px) {
             overflow: visible;
@@ -245,7 +245,7 @@ onBeforeUnmount(() => {
         background: $color-milk-200;
         border-radius: 50%;
         font-size: 20px;
-        color: $color-milk-500;
+        color: $color-sand-400;
         transition: .25s;
 
         @media (max-width: 767px) {
@@ -254,7 +254,7 @@ onBeforeUnmount(() => {
         }
 
         &:focus-visible {
-            @include focus-ring($color-grey-400, 50%);
+            @include focus-ring($color-grey-300, 50%);
         }
 
         &:hover {

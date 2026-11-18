@@ -53,11 +53,11 @@ const artistType = computed(() => {
         flex-shrink: 0;
         justify-content: center;
         align-items: center;
-        background: #CFCFC9;
+        background: $color-milk-300;
         border-radius: 50%;
         object-fit: cover;
         font-size: 9px;
-        color: $color-milk-300;
+        color: $color-milk-600;
     }
 
     &__content {
@@ -77,7 +77,7 @@ const artistType = computed(() => {
     &__type {
         font-size: 12px;
         line-height: 1em;
-        color: $color-milk-500;
+        color: $color-sand-400;
         text-transform: uppercase;
     }
 }

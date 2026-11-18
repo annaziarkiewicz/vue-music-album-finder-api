@@ -47,12 +47,12 @@ withDefaults(defineProps<LoaderRingProps>(), {
         }
 
         &--two {
-            border-color: $color-rose-200;
+            border-color: $color-rose-100;
             animation-delay: .8s;
         }
 
         &--three {
-            border-color: $color-navy-200;
+            border-color: $color-navy-100;
             animation-delay: 1.6s;
         }
     }

@@ -29,7 +29,7 @@ defineProps<{
     &__number {
         width: 32px;
         flex-shrink: 0;
-        color: #CFCFC9;
+        color: $color-milk-300;
     }
 
     &__title {

@@ -29,7 +29,7 @@ const errorMessage = computed(() => {
     color: $color-milk-100;
 
     &__label {
-        color: $color-rose-300;
+        color: $color-rose-200;
         text-transform: uppercase;
     }
 }

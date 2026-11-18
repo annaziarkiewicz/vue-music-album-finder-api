@@ -44,12 +44,12 @@ defineProps<{
         transition: .25s;
 
         &:hover {
-            color: $color-grey-400;
-            text-shadow: 1px 1px $color-grey-200;
+            color: $color-grey-300;
+            text-shadow: 1px 1px $color-milk-400;
         }
 
         &:focus-visible {
-            @include focus-ring($color-grey-400, 4px);
+            @include focus-ring($color-grey-300, 4px);
         }
     }
 }

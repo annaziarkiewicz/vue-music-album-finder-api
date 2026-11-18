@@ -116,10 +116,10 @@ const onImageLoad = (event: Event) => {
         }
 
         .az-cover__image {
-            box-shadow: 0 24px 24px -24px $color-grey-300, 28px 0 24px -28px #101010;
+            box-shadow: 0 24px 24px -24px $color-grey-200, 28px 0 24px -28px #101010;
 
             &--loading {
-                background: #CFCFC9;
+                background: $color-milk-300;
             }
         }
     }
@@ -141,15 +141,15 @@ const onImageLoad = (event: Event) => {
         }
 
         :not(&--empty) {
-            box-shadow: 0 24px 24px -24px $color-grey-300;
+            box-shadow: 0 24px 24px -24px $color-grey-200;
         }
 
         &--loading {
-            background: #CFCFC9;
+            background: $color-milk-300;
         }
 
         &--empty {
-            box-shadow: 0 24px 24px -24px $color-grey-300;
+            box-shadow: 0 24px 24px -24px $color-grey-200;
             font-size: 12px;
             line-height: 1em;
             text-transform: uppercase;
@@ -161,13 +161,13 @@ const onImageLoad = (event: Event) => {
         }
 
         &--navy {
-            background: $color-navy-200;
-            color: $color-navy-400;
+            background: $color-navy-100;
+            color: $color-navy-300;
         }
 
         &--rose {
-            background: $color-rose-200;
-            color: $color-rose-400;
+            background: $color-rose-100;
+            color: $color-rose-300;
         }
     }
 }

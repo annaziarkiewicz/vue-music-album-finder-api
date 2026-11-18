@@ -240,7 +240,7 @@ onBeforeUnmount(() => {
     flex-direction: column;
     justify-content: stretch;
     gap: 36px;
-    background: #B6B6AF;
+    background: $color-milk-500;
 
     @media (max-width: 767px) {
         padding-inline: 24px;

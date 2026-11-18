@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 body {
-    background: $color-milk-300;
+    background: $color-milk-600;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     color: $color-milk-100;
@@ -13,6 +13,6 @@ body {
 
 ::selection {
     background: $color-grey-100;
-    color: $color-milk-400;
+    color: $color-sand-300;
     text-shadow: 1px 1px $color-milk-100;
 }

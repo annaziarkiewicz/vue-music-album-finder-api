@@ -19,7 +19,7 @@
     &__dot {
         width: 16px;
         height: 16px;
-        background: #9F9F97;
+        background: $color-sand-300;
         border-radius: 50%;
         animation-duration: 1.8s;
         animation-iteration-count: infinite;
@@ -41,63 +41,63 @@
 
 @keyframes dotMint {
     0% {
-        background: $color-mint-200;
+        background: $color-mint-100;
     }
 
     33% {
-        background: $color-mint-200;
+        background: $color-mint-100;
     }
 
     34% {
-        background: #9F9F97;
+        background: $color-sand-300;
     }
 
     100% {
-        background: #9F9F97;
+        background: $color-sand-300;
     }
 }
 
 @keyframes dotNavy {
     0% {
-        background: #9F9F97;
+        background: $color-sand-300;
     }
 
     33% {
-        background: #9F9F97;
+        background: $color-sand-300;
     }
 
     34% {
-        background: $color-navy-200;
+        background: $color-navy-100;
     }
 
     66% {
-        background: $color-navy-200;
+        background: $color-navy-100;
     }
 
     67% {
-        background: #9F9F97;
+        background: $color-sand-300;
     }
 
     100% {
-        background: #9F9F97;
+        background: $color-sand-300;
     }
 }
 
 @keyframes dotRose {
     0% {
-        background: #9F9F97;
+        background: $color-sand-300;
     }
 
     66% {
-        background: #9F9F97;
+        background: $color-sand-300;
     }
 
     67% {
-        background: $color-rose-200;
+        background: $color-rose-100;
     }
 
     100% {
-        background: $color-rose-200;
+        background: $color-rose-100;
     }
 }
 </style>

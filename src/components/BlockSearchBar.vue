@@ -5,6 +5,7 @@
         :class="{
             'az-search-bar--input-keyboard-focus': inputKeyboardFocused,
             'az-search-bar--with-prepend': hasPrepend,
+            'az-search-bar--with-search': $slots.search,
             'az-search-bar--with-suggestions': $slots.suggestions
         }"
         @focusout="onFocusOut"
@@ -48,6 +49,13 @@
                 class="az-search-bar__loader"
                 :size="32"
             />
+
+            <div
+                v-if="$slots.search"
+                class="az-search-bar__search"
+            >
+                <slot name="search" />
+            </div>
 
             <button
                 class="az-search-bar__button"
@@ -235,7 +243,7 @@ onBeforeUnmount(() => {
     padding: 8px 12px 8px 16px;
     display: flex;
     align-items: center;
-    background: #B6B6AF;
+    background: $color-milk-500;
     border-radius: 38px;
     border: 4px solid $color-milk-200;
 
@@ -251,14 +259,24 @@ onBeforeUnmount(() => {
 
     &--input-keyboard-focus {
         &:not(.az-search-bar--with-prepend) {
-            border-color: $color-grey-400;
+            border-color: $color-grey-300;
+        }
+    }
+
+    &--with-search {
+        .az-search-bar__content {
+            gap: 0 8px;
+        }
+
+        .az-search-bar__loader {
+            margin-inline-end: 0;
         }
     }
 
     &--with-suggestions {
         &:not(.az-search-bar--with-prepend) {
             overflow: hidden;
-            box-shadow: 0 0 48px -24px $color-grey-300;
+            box-shadow: 0 0 48px -24px $color-grey-200;
 
             .az-search-bar__content {
                 flex-wrap: wrap;
@@ -317,7 +335,7 @@ onBeforeUnmount(() => {
             left: -8px;
             right: -12px;
             z-index: 3;
-            box-shadow: 0 0 0 4px $color-grey-400;
+            box-shadow: 0 0 0 4px $color-grey-300;
             border-radius: 0 34px 34px 0;
             pointer-events: none;
 
@@ -346,14 +364,14 @@ onBeforeUnmount(() => {
         }
 
         &::placeholder {
-            color: #CFCFC9;
+            color: $color-milk-300;
         }
 
         &:-webkit-autofill,
         &:-webkit-autofill:hover,
         &:-webkit-autofill:focus,
         &:-webkit-autofill:active {
-            box-shadow: 0 0 0 1000px #B6B6AF inset;
+            box-shadow: 0 0 0 1000px $color-milk-500 inset;
             -webkit-text-fill-color: $color-milk-100;
             caret-color: $color-milk-100;
         }
@@ -368,12 +386,12 @@ onBeforeUnmount(() => {
         font-size: 15px;
         font-weight: 500;
         line-height: 1em;
-        color: $color-milk-400;
+        color: $color-sand-300;
         text-transform: uppercase;
         transition: .25s;
 
         &:focus-visible {
-            @include focus-ring($color-grey-400, 22px);
+            @include focus-ring($color-grey-300, 22px);
         }
 
         &:hover:not(:disabled) {
@@ -381,7 +399,7 @@ onBeforeUnmount(() => {
         }
 
         &:disabled {
-            background: $color-grey-200;
+            background: $color-milk-400;
             cursor: not-allowed;
         }
     }
@@ -389,6 +407,13 @@ onBeforeUnmount(() => {
     &__loader {
         margin-inline-end: 12px;
         flex: 0 0 auto;
+    }
+
+    &__search {
+        min-width: 0;
+        display: flex;
+        flex: 0 0 auto;
+        align-items: center;
     }
 
     &__suggestions {
@@ -406,8 +431,8 @@ onBeforeUnmount(() => {
             width: auto;
             margin: 0;
             padding-block-start: 70px;
-            background: #B6B6AF;
-            box-shadow: 0 0 48px -24px $color-grey-300;
+            background: $color-milk-500;
+            box-shadow: 0 0 48px -24px $color-grey-200;
             border-radius: 0 38px 38px 38px;
             border: 4px solid $color-milk-200;
 
